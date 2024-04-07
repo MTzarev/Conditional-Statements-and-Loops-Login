@@ -14,7 +14,7 @@ function login(input) {
             return;
         }
 
-        console.log(`Incorrect password. Try again.`);
+        console.log(`Incorrect password. Please try again.`);
         pass = input.shift()
     }
 
