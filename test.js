@@ -1,7 +1,6 @@
 function login(input) {
     let user = input.shift()
     let password = ``
-
     for (let i = user.length - 1; i >= 0; i--) {
         password += user[i];
     }
@@ -13,12 +12,9 @@ function login(input) {
             console.log(`User ${user} blocked!`);
             return;
         }
-
         console.log(`Incorrect password. Please try again.`);
         pass = input.shift()
     }
-
     console.log(`User ${user} logged in.`)
-
 }
 login(["momo", "Deo", `leo`, `gosho`, `tosho`, `omom`])
